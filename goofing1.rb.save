@@ -1,0 +1,4 @@
+for i in 1..5                    # for i variable in the range 1 to 5 inclusive
+  next if i % 2 == 0             # skip to next iteration of loop if the remainder of (modulus %) i / 2 equals 0. i.e. 2 divides into 2 and 4 equally so will not be printed. 
+  print i                        # print the value of i
+end
