@@ -1,0 +1,59 @@
+A method is a re-usable section of code. It is important to code this way (rather than as one block of continuous code) because:
+
+(a) if you code this way you can track bugs more easily;
+(b) if you code this way you can easily re-use code within the same programme or in others;
+(c) you can use methods a lot when using objects
+
+See methods
+
+def prime(n)
+  puts "That's not an integer." unless n.is_a? Integer
+  is_prime = true
+  for i in 2..n-1
+    if n % i == 0
+      is_prime = false
+    end
+  end
+  if is_prime
+    puts "#{n} is prime!"
+  else
+    puts "#{n} is not prime."
+  end
+end
+
+prime(2)
+prime(9)
+prime(11)
+prime(51)
+prime(97)
+
+Output: 
+
+2 is prime!
+9 is not prime.
+11 is prime!
+51 is not prime.
+97 is prime!
+
+
+Method Syntax
+
+Methods have three parts:
+
+(a) The header
+
+    The header includes;
+	(i) the 'def' keyword (meaning define);
+	(ii)  the name you are assigning to the method;
+	(iii)  any arguments the method takes.
+
+(b) The body
+
+	(i) the body is the code block that describes the procedure the methods carries out;
+	(ii) the body is indented by two spaces by convention;
+	method ends with the 'end' keyword. 
+
+(c) The 'end'
+
+	 
+

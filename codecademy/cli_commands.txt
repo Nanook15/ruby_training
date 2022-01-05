@@ -1,0 +1,5 @@
+# Copy content of a folder /source to another existing folder /dest with the command:
+
+cp -a /source/. /dest/
+
+

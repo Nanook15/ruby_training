@@ -1,0 +1,25 @@
+fruits = ["orange", "apple", "banana", "pear", "grapes"]
+
+def list(a, b)
+	if a > b
+		return -1
+	elsif a < b
+		return 1
+	else
+		return 0
+	end
+end
+
+
+fruits.sort! { |a,b| list(a,b) }
+
+
+
+
+
+
+# fruits.sort! do |firstFruit, secondFruit|
+#   secondFruit <=> firstFruit
+# end
+
+puts fruits
